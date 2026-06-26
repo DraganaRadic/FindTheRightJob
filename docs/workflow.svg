@@ -1,0 +1,220 @@
+<svg viewBox="0 0 820 980" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
+  <title>Find The Right Job — End-to-End Workflow</title>
+  <desc>Weekly automated workflow from LinkedIn job alerts through CV preparation to Dragana's Thursday review and application decision.</desc>
+
+  <!-- Background -->
+  <rect width="820" height="980" fill="#f8f9fa" rx="12"/>
+
+  <!-- ── SWIM LANE LABELS ── -->
+  <rect x="16" y="48" width="200" height="570" rx="8" fill="#eef0f3" opacity="0.6"/>
+  <text x="116" y="76" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="0.08em">MON – WED  ·  AUTOMATED</text>
+
+  <rect x="226" y="48" width="570" height="570" rx="8" fill="#eef0f3" opacity="0.35"/>
+  <text x="511" y="76" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="0.08em">THURSDAY  ·  DRAGANA REVIEWS</text>
+
+  <!-- ── STEP 1: LinkedIn alerts → Gmail ── -->
+  <rect x="28" y="96" width="176" height="56" rx="8" fill="#1b2a4a"/>
+  <text x="116" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">LinkedIn Job Alerts</text>
+  <text x="116" y="134" text-anchor="middle" font-size="10" fill="#a0aec0">arrive in Gmail inbox</text>
+
+  <line x1="116" y1="152" x2="116" y2="178" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── STEP 2: Agent reads Gmail ── -->
+  <rect x="28" y="178" width="176" height="56" rx="8" fill="#2d5be3"/>
+  <text x="116" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Agent Reads Gmail</text>
+  <text x="116" y="216" text-anchor="middle" font-size="10" fill="#bfcff7">extracts job URLs</text>
+
+  <line x1="116" y1="234" x2="116" y2="260" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── STEP 3: Fetch JD ── -->
+  <rect x="28" y="260" width="176" height="56" rx="8" fill="#2d5be3"/>
+  <text x="116" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Fetch Full JD</text>
+  <text x="116" y="298" text-anchor="middle" font-size="10" fill="#bfcff7">public URL, no login</text>
+
+  <line x1="116" y1="316" x2="116" y2="342" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── STEP 4: Filter decision ── -->
+  <polygon points="116,342 176,382 116,422 56,382" fill="#f59e0b"/>
+  <text x="116" y="378" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Match?</text>
+  <text x="116" y="393" text-anchor="middle" font-size="9" fill="#fef3c7">rules.yaml</text>
+
+  <line x1="176" y1="382" x2="210" y2="382" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrRed)"/>
+  <text x="218" y="378" font-size="10" fill="#ef4444" font-weight="600">NO</text>
+  <text x="218" y="392" font-size="9" fill="#9ca3af">discard</text>
+
+  <line x1="116" y1="422" x2="116" y2="448" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrGreen)"/>
+  <text x="124" y="438" font-size="10" fill="#10b981" font-weight="600">YES</text>
+
+  <!-- ── STEP 5: Tailor CV ── -->
+  <rect x="28" y="448" width="176" height="68" rx="8" fill="#2d5be3"/>
+  <text x="116" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">AI Tailors CV</text>
+  <text x="116" y="485" text-anchor="middle" font-size="10" fill="#bfcff7">DRAGANA_CV_MASTER.md</text>
+  <text x="116" y="499" text-anchor="middle" font-size="10" fill="#bfcff7">+ Template_01</text>
+
+  <line x1="116" y1="516" x2="116" y2="542" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── STEP 6: Save to Drive ── -->
+  <rect x="28" y="542" width="176" height="56" rx="8" fill="#1b2a4a"/>
+  <text x="116" y="564" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Save DOCX to Drive</text>
+  <text x="116" y="580" text-anchor="middle" font-size="10" fill="#a0aec0">_generated/ folder</text>
+
+  <!-- Connector to Thursday email -->
+  <line x1="204" y1="570" x2="240" y2="570" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="240" y1="570" x2="240" y2="142" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="240" y1="142" x2="248" y2="142" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- ── STEP 7: Thursday Email ── -->
+  <rect x="248" y="90" width="540" height="104" rx="8" fill="#1b2a4a"/>
+  <text x="518" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Thursday Morning Email (up to 5 matches)</text>
+  <rect x="266" y="124" width="504" height="58" rx="5" fill="#0f1c33"/>
+  <text x="280" y="142" font-size="10" fill="#a0aec0">Role at Company  ·  Location  ·  Why it matched</text>
+  <text x="280" y="156" font-size="10" fill="#60a5fa">▸ CV: Google Drive link    ▸ Job: LinkedIn link</text>
+  <text x="280" y="170" font-size="10" fill="#fbbf24">Reply:  SEND  /  REJECT  /  CV-ISSUE  /  JOB-ISSUE</text>
+
+  <line x1="518" y1="194" x2="518" y2="224" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── STEP 8: Dragana reviews ── -->
+  <rect x="338" y="224" width="360" height="68" rx="8" fill="#374151"/>
+  <text x="518" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Dragana Reviews</text>
+  <text x="518" y="266" text-anchor="middle" font-size="10" fill="#d1d5db">opens CV in Drive  ·  checks JD link</text>
+  <text x="518" y="280" text-anchor="middle" font-size="10" fill="#d1d5db">optionally edits or consults AI</text>
+
+  <line x1="518" y1="292" x2="518" y2="328" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── DECISION: Reply code ── -->
+  <polygon points="518,328 598,370 518,412 438,370" fill="#f59e0b"/>
+  <text x="518" y="366" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Reply</text>
+  <text x="518" y="380" text-anchor="middle" font-size="9" fill="#fef3c7">code?</text>
+
+  <!-- SEND -->
+  <line x1="598" y1="370" x2="642" y2="370" stroke="#10b981" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <rect x="642" y="344" width="120" height="52" rx="8" fill="#065f46"/>
+  <text x="702" y="366" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7">SEND</text>
+  <text x="702" y="380" text-anchor="middle" font-size="9" fill="#a7f3d0">Dragana applies</text>
+  <text x="702" y="392" text-anchor="middle" font-size="9" fill="#a7f3d0">herself</text>
+
+  <!-- REJECT -->
+  <line x1="438" y1="370" x2="374" y2="370" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+  <rect x="248" y="344" width="126" height="52" rx="8" fill="#7f1d1d"/>
+  <text x="311" y="366" text-anchor="middle" font-size="11" font-weight="700" fill="#fca5a5">REJECT</text>
+  <text x="311" y="380" text-anchor="middle" font-size="9" fill="#fecaca">job not right</text>
+  <text x="311" y="392" text-anchor="middle" font-size="9" fill="#fecaca">archived</text>
+
+  <!-- CV-ISSUE -->
+  <line x1="458" y1="400" x2="420" y2="440" stroke="#f97316" stroke-width="2" marker-end="url(#arrOrange)"/>
+  <rect x="248" y="430" width="170" height="52" rx="8" fill="#7c2d12"/>
+  <text x="333" y="452" text-anchor="middle" font-size="11" font-weight="700" fill="#fed7aa">CV-ISSUE</text>
+  <text x="333" y="467" text-anchor="middle" font-size="9" fill="#ffedd5">CV wasn't good enough</text>
+  <text x="333" y="479" text-anchor="middle" font-size="9" fill="#ffedd5">system learns</text>
+
+  <!-- JOB-ISSUE -->
+  <line x1="578" y1="400" x2="600" y2="440" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrPurple)"/>
+  <rect x="596" y="430" width="170" height="52" rx="8" fill="#3b0764"/>
+  <text x="681" y="452" text-anchor="middle" font-size="11" font-weight="700" fill="#e9d5ff">JOB-ISSUE</text>
+  <text x="681" y="467" text-anchor="middle" font-size="9" fill="#f3e8ff">job not right on reading</text>
+  <text x="681" y="479" text-anchor="middle" font-size="9" fill="#f3e8ff">system learns</text>
+
+  <!-- No reply -->
+  <line x1="518" y1="412" x2="518" y2="500" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <rect x="428" y="500" width="180" height="52" rx="8" fill="#374151"/>
+  <text x="518" y="522" text-anchor="middle" font-size="11" font-weight="700" fill="#9ca3af">No Reply in 2 days</text>
+  <text x="518" y="537" text-anchor="middle" font-size="9" fill="#6b7280">renamed LATE.docx</text>
+  <text x="518" y="549" text-anchor="middle" font-size="9" fill="#6b7280">archived</text>
+
+  <!-- ── LEARNING LOOP ── -->
+  <rect x="16" y="640" width="782" height="120" rx="8" fill="#eef0f3" opacity="0.7"/>
+  <text x="407" y="663" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="0.08em">LEARNING LOOP  ·  CONTINUOUS</text>
+
+  <rect x="28" y="672" width="174" height="76" rx="8" fill="#1e293b"/>
+  <text x="115" y="696" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">Outcome Logged</text>
+  <text x="115" y="712" text-anchor="middle" font-size="9" fill="#64748b">every reply code stored</text>
+  <text x="115" y="726" text-anchor="middle" font-size="9" fill="#64748b">with job + CV metadata</text>
+
+  <rect x="216" y="672" width="174" height="76" rx="8" fill="#1e293b"/>
+  <text x="303" y="696" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">Rules Review</text>
+  <text x="303" y="712" text-anchor="middle" font-size="9" fill="#64748b">every 10 archived jobs</text>
+  <text x="303" y="726" text-anchor="middle" font-size="9" fill="#64748b">rules.yaml updated</text>
+
+  <rect x="404" y="672" width="174" height="76" rx="8" fill="#1e293b"/>
+  <text x="491" y="696" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">CV Quality Signal</text>
+  <text x="491" y="712" text-anchor="middle" font-size="9" fill="#64748b">CV-ISSUE drives</text>
+  <text x="491" y="726" text-anchor="middle" font-size="9" fill="#64748b">tailoring improvement</text>
+
+  <rect x="592" y="672" width="192" height="76" rx="8" fill="#1e293b"/>
+  <text x="688" y="696" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">The One KPI</text>
+  <text x="688" y="712" text-anchor="middle" font-size="9" fill="#64748b">interview conversion</text>
+  <text x="688" y="726" text-anchor="middle" font-size="9" fill="#64748b">rate — did it work?</text>
+
+  <line x1="202" y1="710" x2="216" y2="710" stroke="#334155" stroke-width="1.5" marker-end="url(#arrGrey)"/>
+  <line x1="390" y1="710" x2="404" y2="710" stroke="#334155" stroke-width="1.5" marker-end="url(#arrGrey)"/>
+  <line x1="578" y1="710" x2="592" y2="710" stroke="#334155" stroke-width="1.5" marker-end="url(#arrGrey)"/>
+
+  <!-- Feedback lines from outcomes into learning -->
+  <line x1="311" y1="482" x2="311" y2="630" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="311" y1="630" x2="115" y2="630" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="115" y1="630" x2="115" y2="672" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3" opacity="0.5" marker-end="url(#arrRed)"/>
+
+  <line x1="702" y1="396" x2="750" y2="396" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="750" y1="396" x2="750" y2="630" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="750" y1="630" x2="730" y2="630" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="730" y1="630" x2="730" y2="672" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3" opacity="0.5" marker-end="url(#arrGreen)"/>
+
+  <!-- ── LEGEND ── -->
+  <rect x="16" y="800" width="782" height="164" rx="8" fill="#eef0f3" opacity="0.5"/>
+  <text x="407" y="822" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="0.08em">LEGEND</text>
+
+  <rect x="36" y="834" width="14" height="14" rx="3" fill="#2d5be3"/>
+  <text x="58" y="846" font-size="11" fill="#374151">Automated agent step</text>
+
+  <rect x="36" y="858" width="14" height="14" rx="3" fill="#1b2a4a"/>
+  <text x="58" y="870" font-size="11" fill="#374151">Data store / external system</text>
+
+  <rect x="36" y="882" width="14" height="14" rx="3" fill="#374151"/>
+  <text x="58" y="894" font-size="11" fill="#374151">Human action (Dragana)</text>
+
+  <rect x="36" y="906" width="14" height="14" rx="3" fill="#f59e0b"/>
+  <text x="58" y="918" font-size="11" fill="#374151">Decision point</text>
+
+  <rect x="240" y="834" width="14" height="14" rx="3" fill="#065f46"/>
+  <text x="262" y="846" font-size="11" fill="#374151">SEND — Dragana applies herself</text>
+
+  <rect x="240" y="858" width="14" height="14" rx="3" fill="#7f1d1d"/>
+  <text x="262" y="870" font-size="11" fill="#374151">REJECT — job not right</text>
+
+  <rect x="240" y="882" width="14" height="14" rx="3" fill="#7c2d12"/>
+  <text x="262" y="894" font-size="11" fill="#374151">CV-ISSUE — tailoring quality signal</text>
+
+  <rect x="240" y="906" width="14" height="14" rx="3" fill="#3b0764"/>
+  <text x="262" y="918" font-size="11" fill="#374151">JOB-ISSUE — matching quality signal</text>
+
+  <!-- Open decisions callout -->
+  <rect x="496" y="830" width="290" height="116" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="641" y="850" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Open Decisions</text>
+  <text x="512" y="868" font-size="10" fill="#78350f">&#x2B21;  AI model: Gemini (GCP billing) vs</text>
+  <text x="526" y="882" font-size="10" fill="#78350f">Anthropic API ($5 top-up)</text>
+  <text x="512" y="900" font-size="10" fill="#78350f">&#x2B21;  Architecture: Python + GitHub Actions</text>
+  <text x="526" y="914" font-size="10" fill="#78350f">vs n8n vs hybrid</text>
+  <text x="512" y="932" font-size="10" fill="#78350f">&#x2B21;  Phase 2: HR portal form-filling</text>
+
+  <!-- ── ARROWHEAD MARKERS ── -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#9ca3af"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrOrange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f97316"/>
+    </marker>
+    <marker id="arrPurple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#a78bfa"/>
+    </marker>
+    <marker id="arrGrey" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#334155"/>
+    </marker>
+  </defs>
+</svg>
