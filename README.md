@@ -47,7 +47,10 @@ The workflow has three zones:
 
 ## How I Approached It
 
-Before writing any code, I ran a structured requirements phase: 30+ questions covering job filtering logic, CV preparation rules, notification design, feedback loops, privacy constraints, and what success actually means.
+I started with the basic idea. I talked to Claude Code and very fast, it jumped into solutioning. Wow! This is speed of light, I thought! And then hickups. Issues with integration with any file system, be it locally, be it Google Drive. Then side scenarios popped. Then the first results were not so good. I had too much to correct. The issues and misunderstandings and unknowns were coming from everywhere.
+
+Stop!!! We need to start from the begining!
+BE MY BUSINESS ANALYST and ask me everything about rules, requirements, side and negative scenarios, performance, privacy...  That structured requirements phase felt like the only right way to go. 30+ questions covering job filtering logic, CV preparation rules, notification design, feedback loops, privacy constraints, and what success actually means.
 
 Some things I learned during that phase that changed the design:
 
